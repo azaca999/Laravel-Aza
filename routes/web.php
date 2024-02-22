@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -26,4 +25,9 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/index.html', function () {
+    return view('index');
+});
+
 // Route::get('/home', [HomeController::class, 'index']);
+// Route::get('/index', [IndexController::class, 'index']);
